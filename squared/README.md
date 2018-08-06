@@ -20,3 +20,7 @@ returns the number of almost-square integers `S` in the range `10 ≤ S ≤ A`.
 ## My Solution
 
 I simply made a set of all the possible squares I would need to check for, then checked if any of the ways of splitting the number was in this set.
+
+This is the other question that I got wrong! My solution fails because it does not classify numbers such as "200" as almost-square, due to them having a double zero when the first digit is removed.
+
+I could have easily fixed this by keeping a set of the integers needed, rather than casting them all to strings as I did. Then I could have cast to an integer when checking if a number with a digit removed is in this set. These changes are made in comments in the code.
